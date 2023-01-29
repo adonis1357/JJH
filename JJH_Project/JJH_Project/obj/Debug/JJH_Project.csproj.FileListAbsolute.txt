@@ -1,0 +1,7 @@
+C:\Users\admin\Desktop\JJH\JJH_Project\JJH_Project\bin\Debug\JJH_Project.exe.config
+C:\Users\admin\Desktop\JJH\JJH_Project\JJH_Project\bin\Debug\JJH_Project.exe
+C:\Users\admin\Desktop\JJH\JJH_Project\JJH_Project\bin\Debug\JJH_Project.pdb
+C:\Users\admin\Desktop\JJH\JJH_Project\JJH_Project\obj\Debug\JJH_Project.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\JJH\JJH_Project\JJH_Project\obj\Debug\JJH_Project.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\JJH\JJH_Project\JJH_Project\obj\Debug\JJH_Project.exe
+C:\Users\admin\Desktop\JJH\JJH_Project\JJH_Project\obj\Debug\JJH_Project.pdb
