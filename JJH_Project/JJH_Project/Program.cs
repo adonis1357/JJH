@@ -261,99 +261,214 @@ namespace JJH_Project
             //var ffff = 3.12f;
 
 
-            int kk = 1;
-            int kk2 = 4;
-            int kk4 = 8;
+            //int kk = 1;
+            //int kk2 = 4;
+            //int kk4 = 8;
 
-            int[] iii = new int[3];
+            //int[] iii = new int[3];
 
-            // kkk -> 0, 1, 2, 3
-            // lang -> C, C++, C#
+            //// kkk -> 0, 1, 2, 3
+            //// lang -> C, C++, C#
 
-            int[] kkk = new int[4] { 0, 1, 2, 3 };
-            System.Console.WriteLine(kkk[2]);
+            //int[] kkk = new int[4] { 0, 1, 2, 3 };
+            //System.Console.WriteLine(kkk[2]);
 
-            string[] lang = new string[3] { "C", "C++", "C#" };
-            System.Console.WriteLine(lang[2]);
+            //string[] lang = new string[3] { "C", "C++", "C#" };
+            //System.Console.WriteLine(lang[2]);
 
-            long[] lolo = new long[1] { 2 };
-
-
-            System.Console.WriteLine("============================");
-
-            // int 형 배열 5칸짜리 5개
-            // string 형 qoduf 5칸짜리 5개 만들기
-
-            int[] ii0004 = new int[5] { 0, 1, 2, 3, 4 };
-            int[] ii0509 = new int[5] { 5, 6, 7, 8, 9 };
-            int[] ii1014 = new int[5] { 10, 11, 12, 13, 14 };
-            int[] ii1519 = new int[5] { 15, 16, 17, 18, 19 };
-            int[] ii2024 = new int[5] { 20, 21, 22, 23, 24 };
-
-            System.Console.WriteLine(ii0004[0]);
-            System.Console.WriteLine(ii0509[1]);
-            System.Console.WriteLine(ii1014[2]);
-            System.Console.WriteLine(ii1519[3]);
-            System.Console.WriteLine(ii2024[4]);
-
-            string[] str01 = new string[5] { "하나", "둘", "셋", "넷", "다섯" };
-            string[] str02 = new string[5] { "여섯", "일곱", "여덜", "아홉", "열" };
-            string[] str03 = new string[5] { "열하나", "열둘", "열셋", "열넷", "열다섯" };
-            string[] str04 = new string[5] { "열여섯", "열일곱", "열여덜", "열아홉", "스물" };
-            string[] str05 = new string[5] { "스물하나", "스물둘", "스물셋", "스물넷", "스물다섯" };
-
-            System.Console.WriteLine(str01[0]);
-            System.Console.WriteLine(str02[1]);
-            System.Console.WriteLine(str03[2]);
-            System.Console.WriteLine(str04[3]);
-            System.Console.WriteLine(str05[4]);
+            //long[] lolo = new long[1] { 2 };
 
 
-            System.Console.WriteLine("============================");
+            //System.Console.WriteLine("============================");
+
+            //// int 형 배열 5칸짜리 5개
+            //// string 형 qoduf 5칸짜리 5개 만들기
+
+            //int[] ii0004 = new int[5] { 0, 1, 2, 3, 4 };
+            //int[] ii0509 = new int[5] { 5, 6, 7, 8, 9 };
+            //int[] ii1014 = new int[5] { 10, 11, 12, 13, 14 };
+            //int[] ii1519 = new int[5] { 15, 16, 17, 18, 19 };
+            //int[] ii2024 = new int[5] { 20, 21, 22, 23, 24 };
+
+            //System.Console.WriteLine(ii0004[0]);
+            //System.Console.WriteLine(ii0509[1]);
+            //System.Console.WriteLine(ii1014[2]);
+            //System.Console.WriteLine(ii1519[3]);
+            //System.Console.WriteLine(ii2024[4]);
+
+            //string[] str01 = new string[5] { "하나", "둘", "셋", "넷", "다섯" };
+            //string[] str02 = new string[5] { "여섯", "일곱", "여덜", "아홉", "열" };
+            //string[] str03 = new string[5] { "열하나", "열둘", "열셋", "열넷", "열다섯" };
+            //string[] str04 = new string[5] { "열여섯", "열일곱", "열여덜", "열아홉", "스물" };
+            //string[] str05 = new string[5] { "스물하나", "스물둘", "스물셋", "스물넷", "스물다섯" };
+
+            //System.Console.WriteLine(str01[0]);
+            //System.Console.WriteLine(str02[1]);
+            //System.Console.WriteLine(str03[2]);
+            //System.Console.WriteLine(str04[3]);
+            //System.Console.WriteLine(str05[4]);
 
 
-            int[] LaterArray;
-
-            System.Console.WriteLine("배열의 크기는?");
-            string ArraySize;
-            ArraySize = System.Console.ReadLine();
-
-            LaterArray = new int[Convert.ToInt32(ArraySize)];
+            //System.Console.WriteLine("============================");
 
 
-            string[] _lang = new string[3];
-            _lang[0] = "C";
-            _lang[1] = "C++";
-            _lang[2] = "C#";
+            //int[] LaterArray;
 
-            System.Console.WriteLine($"0번 값은 {_lang[0]}입니다.");
-            _lang[0] = "C를 변경할꺼야";
+            //System.Console.WriteLine("배열의 크기는?");
+            //string ArraySize;
+            //ArraySize = System.Console.ReadLine();
 
-            System.Console.WriteLine($"0번 값은 {_lang[0]}입니다.");
+            //LaterArray = new int[Convert.ToInt32(ArraySize)];
 
-            // 식당에 음식이 떡볶이, 김밥, 라면, 라볶이가 있다.
-            // 이중에 숫자를 입력받으면
-            // 입력받은 값은 비어있게 된다.
 
-            // 최초 음식들과
-            // 숫자를 입력받았을때 음식을 출력하고
+            //string[] _lang = new string[3];
+            //_lang[0] = "C";
+            //_lang[1] = "C++";
+            //_lang[2] = "C#";
 
-            // 비어있게 되었다라는 결과값도 출력하라
+            //System.Console.WriteLine($"0번 값은 {_lang[0]}입니다.");
+            //_lang[0] = "C를 변경할꺼야";
 
-            string[] Memu = new string[4] { "떡볶이", "김밥", "라면", "라볶이" };
-            string MemuNumber;
+            //System.Console.WriteLine($"0번 값은 {_lang[0]}입니다.");
 
-            System.Console.WriteLine("선택할 메뉴 넘버를 입력해주세요");
+            //// 식당에 음식이 떡볶이, 김밥, 라면, 라볶이가 있다.
+            //// 이중에 숫자를 입력받으면
+            //// 입력받은 값은 비어있게 된다.
 
-            MemuNumber = System.Console.ReadLine();
-            int MemuNumber2 = Convert.ToInt32(MemuNumber);
+            //// 최초 음식들과
+            //// 숫자를 입력받았을때 음식을 출력하고
 
-            System.Console.WriteLine($"메뉴는 {Memu[0]}, {Memu[1]}, {Memu[2]}, {Memu[3]} 입니다.");
-            System.Console.WriteLine($"선택한 메뉴는 {Memu[MemuNumber2]} 입니다.");
+            //// 비어있게 되었다라는 결과값도 출력하라
 
-            Memu[MemuNumber2] = "   ";
-            System.Console.Write("남은 메뉴는");
-            System.Console.WriteLine($"{Memu[0]}, {Memu[1]}, {Memu[2]}, {Memu[3]} 입니다.");
+            //string[] Memu = new string[4] { "떡볶이", "김밥", "라면", "라볶이" };
+            //string MemuNumber;
+
+            //System.Console.WriteLine("선택할 메뉴 넘버를 입력해주세요");
+
+            //MemuNumber = System.Console.ReadLine();
+            //int MemuNumber2 = Convert.ToInt32(MemuNumber);
+
+            //System.Console.WriteLine($"메뉴는 {Memu[0]}, {Memu[1]}, {Memu[2]}, {Memu[3]} 입니다.");
+            //System.Console.WriteLine($"선택한 메뉴는 {Memu[MemuNumber2]} 입니다.");
+
+            //Memu[MemuNumber2] = "   ";
+            //System.Console.Write("남은 메뉴는");
+            //System.Console.WriteLine($"{Memu[0]}, {Memu[1]}, {Memu[2]}, {Memu[3]} 입니다.");
+
+
+            //1월 30일 숙제 Wirte, WriteLine 10줄을 활용하여 자기소개 작성하기
+            //System.Console.Write("제 이름은 ");
+            //System.Console.Write("정진호 ");
+            //System.Console.WriteLine("입니다.");
+
+            //System.Console.Write("제 나이는 ");
+            //System.Console.WriteLine("마흔살 입니다.");
+
+            //System.Console.Write("현재 ");
+            //System.Console.Write("부천에서 ");
+            //System.Console.WriteLine("거주하고 있습니다.");
+
+            //System.Console.Write("저는 게임아카데미 ");
+            //System.Console.WriteLine(" 학생입니다.");
+
+            //2월 1일 숙제  자기소개를 입력받아 출력하기
+            //string Name;
+            //string BirthYearRead;
+            //string Address;
+            //string Gender;
+            //string AboutMe;
+            //string Year = System.DateTime.Now.ToString("yyyy");
+
+            //System.Console.WriteLine("당신의 이름을 입력해주세요");
+            //Name = System.Console.ReadLine();
+
+            //System.Console.WriteLine("당신의 출생년도를 입력해주세요");
+            //BirthYearRead = System.Console.ReadLine();
+
+            //System.Console.WriteLine("당신의 주소를 입력해주세요");
+            //Address = System.Console.ReadLine();
+
+            //System.Console.WriteLine("당신의 성별을 입력해주세요");
+            //Gender = System.Console.ReadLine();
+
+            //System.Console.WriteLine("자기소개를 입력해주세요");
+            //AboutMe = System.Console.ReadLine();
+
+            //System.Console.WriteLine("");
+            //System.Console.WriteLine("");
+            //System.Console.WriteLine("");
+
+            //System.Console.Write("당신의 이름은 ");
+            //System.Console.Write(Name);
+            //System.Console.WriteLine("입니다.");
+
+            //System.Console.WriteLine("");
+
+            //System.Console.Write("당신의 나이는 ");
+            //int BirthYear = Convert.ToInt32(BirthYearRead);
+            //int NowYear = Convert.ToInt32(Year);
+            //int MyAge = NowYear - BirthYear;
+            //System.Console.Write(MyAge);
+            //System.Console.WriteLine("입니다.");
+
+            //System.Console.WriteLine("");
+
+            //System.Console.Write("당신의 주소는 ");
+            //System.Console.Write(Address);
+            //System.Console.WriteLine("입니다.");
+
+            //System.Console.WriteLine("");
+
+            //System.Console.Write("당신의 성별은 ");
+            //System.Console.Write(Gender);
+            //System.Console.WriteLine("입니다.");
+
+            //System.Console.WriteLine("");
+
+            //System.Console.Write(Name);
+            //System.Console.WriteLine("님의 자기소개 입니다.");
+            //System.Console.WriteLine(AboutMe);
+
+            //System.Console.WriteLine("");
+            //System.Console.WriteLine("이상입니다.");
+
+            //2월 3일 숙제
+            //1. string (문장)형식의 배열을 만든다. 변수의 이름은 Foods 로 한다. (string[] Foods)
+            string[] Foods;
+
+            //2. 떡볶이, 김밥, 만두, 튀김 이라는 4개의 원소를 넣는다 (Foods = new string[4] {"떡볶...)
+            Foods = new string[4] { "떡볶이", "김밥", "만두", "튀김" };
+
+            //3. 숫자를 하나 입력받는다.
+            System.Console.WriteLine(@"
+<메뉴판>
+1. 떡볶이
+2. 김밥
+3. 만두
+4. 튀김
+먹고싶은 메뉴의 번호를 입력해주세요");
+            string ReadNumber = System.Console.ReadLine();
+            int Number = Convert.ToInt32(ReadNumber);
+
+            //4. 입력받은 음식을 먹었다 라는 내용을 띄운다(wrtieline)
+            System.Console.Write(Foods[Number - 1]);
+            System.Console.WriteLine("(을)를 먹었습니다.");
+
+            System.Console.WriteLine("");
+
+            //5. 다시 Foods에 남은 음식을 보여준다(먹은음식은 비어있다)
+            System.Console.WriteLine("메뉴판 새로고침");
+            Foods[Number - 1] = "Sold Out";
+            System.Console.Write("1. ");
+            System.Console.WriteLine(Foods[0]);
+            System.Console.Write("2. ");
+            System.Console.WriteLine(Foods[1]);
+            System.Console.Write("3. ");
+            System.Console.WriteLine(Foods[2]);
+            System.Console.Write("4. ");
+            System.Console.WriteLine(Foods[3]);
+
+
 
         }
     }
