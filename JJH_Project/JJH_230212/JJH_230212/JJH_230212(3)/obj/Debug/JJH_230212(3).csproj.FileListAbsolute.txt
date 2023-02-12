@@ -1,0 +1,7 @@
+C:\Users\admin\Desktop\251515\JJH_Project\JJH_230212\JJH_230212\JJH_230212(3)\obj\Debug\JJH_230212(3).csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\251515\JJH_Project\JJH_230212\JJH_230212\JJH_230212(3)\bin\Debug\JJH_230212(3).exe.config
+C:\Users\admin\Desktop\251515\JJH_Project\JJH_230212\JJH_230212\JJH_230212(3)\bin\Debug\JJH_230212(3).exe
+C:\Users\admin\Desktop\251515\JJH_Project\JJH_230212\JJH_230212\JJH_230212(3)\bin\Debug\JJH_230212(3).pdb
+C:\Users\admin\Desktop\251515\JJH_Project\JJH_230212\JJH_230212\JJH_230212(3)\obj\Debug\JJH_230212(3).exe
+C:\Users\admin\Desktop\251515\JJH_Project\JJH_230212\JJH_230212\JJH_230212(3)\obj\Debug\JJH_230212(3).pdb
+C:\Users\admin\Desktop\251515\JJH_Project\JJH_230212\JJH_230212\JJH_230212(3)\obj\Debug\JJH_230212(3).csproj.AssemblyReference.cache
