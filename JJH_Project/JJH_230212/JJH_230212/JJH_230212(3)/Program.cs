@@ -54,22 +54,22 @@ namespace JJH_230212_3_
             //가고싶은 식당을 입력받고, 메뉴를 모두 띄워준다.
             //유저는 메뉴를 입력하고, 내야할 가격, 고른 메뉴를 띄워준다.
 
-            //Korean koreanFood = new Korean();
-            //koreanFood.MenuSetting();
-            //koreanFood.ShowMenu();
+            Korean koreanFood = new Korean();
+            koreanFood.MenuSetting();
+            koreanFood.ShowMenu();
 
-            //System.Console.WriteLine();
-            //System.Console.Write("먹을 음식은 몇번? : ");
-            //int inputMenu = Convert.ToInt32(System.Console.ReadLine()) - 1;
-            //koreanFood.OderMenu(inputMenu);
+            System.Console.WriteLine();
+            System.Console.Write("먹을 음식은 몇번? : ");
+            int inputMenu = Convert.ToInt32(System.Console.ReadLine()) - 1;
+            koreanFood.OderMenu(inputMenu);
 
-            //chinese chineseFood = new chinese();
-            //chineseFood.MenuSetting();
-            //chineseFood.ShowMenu();
-            //System.Console.WriteLine();
-            //System.Console.Write("먹을 음식은 몇번? : ");
-            //int inputMenu2 = Convert.ToInt32(System.Console.ReadLine()) - 1;
-            //chineseFood.OderMenu(inputMenu2);
+            chinese chineseFood = new chinese();
+            chineseFood.MenuSetting();
+            chineseFood.ShowMenu();
+            System.Console.WriteLine();
+            System.Console.Write("먹을 음식은 몇번? : ");
+            int inputMenu2 = Convert.ToInt32(System.Console.ReadLine()) - 1;
+            chineseFood.OderMenu(inputMenu2);
 
             //Western WesternFood = new Western();
             //WesternFood.MenuSetting();
@@ -100,18 +100,19 @@ namespace JJH_230212_3_
 
             //Classes 클래스에서 숫자를 입력하면
             //입력숫자와 같은 반에 들어간 모든 학생을 출력해준다.(이름만)
-            Classes classes = new Classes();
+            //Classes classes = new Classes();
 
-            int count = 0;
-            do
-            {
-                classes.InputStudentsData(count);
-                count++;
-            } while (classes.AskKeepPutData2());
-            classes.searchTitle2();
+            //int count = 0;
+            //do
+            //{
+            //    classes.InputStudentsData(count);
+            //    count++;
+            //} while (classes.AskKeepPutData2());
+            //classes.searchTitle2();
 
         }
     }
+
 
     class student
     {
@@ -235,15 +236,6 @@ namespace JJH_230212_3_
             }
         }
     }
-    //public void bookdata()
-    //{
-    //    System.Console.WriteLine("제목을 입력해주세요");
-    //    title = System.Console.ReadLine();
-    //    System.Console.WriteLine("지은이를 입력해주세요");
-    //    Author = System.Console.ReadLine();
-    //    System.Console.WriteLine("출판사를 입력해주세요");
-    //    publisher = System.Console.ReadLine();
-    //}
 
     class Rest
     {

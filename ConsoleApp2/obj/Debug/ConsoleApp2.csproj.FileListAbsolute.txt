@@ -1,0 +1,2 @@
+C:\Users\adoni\OneDrive\바탕 화면\JJH2\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.AssemblyReference.cache
+C:\Users\adoni\OneDrive\바탕 화면\JJH2\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.CoreCompileInputs.cache
