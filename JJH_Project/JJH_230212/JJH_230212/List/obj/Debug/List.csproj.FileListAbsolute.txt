@@ -1,0 +1,7 @@
+C:\Users\admin\Desktop\JJH_230219\JJH_Project\JJH_230212\JJH_230212\List\obj\Debug\List.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\JJH_230219\JJH_Project\JJH_230212\JJH_230212\List\obj\Debug\List.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\JJH_230219\JJH_Project\JJH_230212\JJH_230212\List\bin\Debug\List.exe.config
+C:\Users\admin\Desktop\JJH_230219\JJH_Project\JJH_230212\JJH_230212\List\bin\Debug\List.exe
+C:\Users\admin\Desktop\JJH_230219\JJH_Project\JJH_230212\JJH_230212\List\bin\Debug\List.pdb
+C:\Users\admin\Desktop\JJH_230219\JJH_Project\JJH_230212\JJH_230212\List\obj\Debug\List.exe
+C:\Users\admin\Desktop\JJH_230219\JJH_Project\JJH_230212\JJH_230212\List\obj\Debug\List.pdb

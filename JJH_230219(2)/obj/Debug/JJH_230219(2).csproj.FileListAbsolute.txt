@@ -1,0 +1,6 @@
+C:\Users\admin\Desktop\JJH_230219\JJH_230219(2)\bin\Debug\JJH_230219(2).exe.config
+C:\Users\admin\Desktop\JJH_230219\JJH_230219(2)\bin\Debug\JJH_230219(2).exe
+C:\Users\admin\Desktop\JJH_230219\JJH_230219(2)\bin\Debug\JJH_230219(2).pdb
+C:\Users\admin\Desktop\JJH_230219\JJH_230219(2)\obj\Debug\JJH_230219(2).csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\JJH_230219\JJH_230219(2)\obj\Debug\JJH_230219(2).exe
+C:\Users\admin\Desktop\JJH_230219\JJH_230219(2)\obj\Debug\JJH_230219(2).pdb

@@ -1,0 +1,6 @@
+C:\Users\admin\Desktop\JJH_230219\JJH_Project\JJH_230212\JJH_230212\virtual\bin\Debug\@virtual.exe.config
+C:\Users\admin\Desktop\JJH_230219\JJH_Project\JJH_230212\JJH_230212\virtual\bin\Debug\@virtual.exe
+C:\Users\admin\Desktop\JJH_230219\JJH_Project\JJH_230212\JJH_230212\virtual\bin\Debug\@virtual.pdb
+C:\Users\admin\Desktop\JJH_230219\JJH_Project\JJH_230212\JJH_230212\virtual\obj\Debug\virtual.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\JJH_230219\JJH_Project\JJH_230212\JJH_230212\virtual\obj\Debug\@virtual.exe
+C:\Users\admin\Desktop\JJH_230219\JJH_Project\JJH_230212\JJH_230212\virtual\obj\Debug\@virtual.pdb

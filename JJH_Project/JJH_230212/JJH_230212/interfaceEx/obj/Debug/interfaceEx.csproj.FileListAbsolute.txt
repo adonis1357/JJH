@@ -1,0 +1,7 @@
+C:\Users\admin\Desktop\JJH_230219\JJH_Project\JJH_230212\JJH_230212\interfaceEx\obj\Debug\interfaceEx.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\JJH_230219\JJH_Project\JJH_230212\JJH_230212\interfaceEx\obj\Debug\interfaceEx.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\JJH_230219\JJH_Project\JJH_230212\JJH_230212\interfaceEx\bin\Debug\interfaceEx.exe.config
+C:\Users\admin\Desktop\JJH_230219\JJH_Project\JJH_230212\JJH_230212\interfaceEx\bin\Debug\interfaceEx.exe
+C:\Users\admin\Desktop\JJH_230219\JJH_Project\JJH_230212\JJH_230212\interfaceEx\bin\Debug\interfaceEx.pdb
+C:\Users\admin\Desktop\JJH_230219\JJH_Project\JJH_230212\JJH_230212\interfaceEx\obj\Debug\interfaceEx.exe
+C:\Users\admin\Desktop\JJH_230219\JJH_Project\JJH_230212\JJH_230212\interfaceEx\obj\Debug\interfaceEx.pdb

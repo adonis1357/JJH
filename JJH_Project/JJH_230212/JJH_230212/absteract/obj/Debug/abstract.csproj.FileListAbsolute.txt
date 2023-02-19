@@ -1,0 +1,6 @@
+C:\Users\admin\Desktop\JJH_230219\JJH_Project\JJH_230212\JJH_230212\absteract\bin\Debug\absteract.exe.config
+C:\Users\admin\Desktop\JJH_230219\JJH_Project\JJH_230212\JJH_230212\absteract\bin\Debug\absteract.exe
+C:\Users\admin\Desktop\JJH_230219\JJH_Project\JJH_230212\JJH_230212\absteract\bin\Debug\absteract.pdb
+C:\Users\admin\Desktop\JJH_230219\JJH_Project\JJH_230212\JJH_230212\absteract\obj\Debug\abstract.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\JJH_230219\JJH_Project\JJH_230212\JJH_230212\absteract\obj\Debug\absteract.exe
+C:\Users\admin\Desktop\JJH_230219\JJH_Project\JJH_230212\JJH_230212\absteract\obj\Debug\absteract.pdb

@@ -1,0 +1,7 @@
+C:\Users\admin\Desktop\JJH_230219\JJH_Project\JJH_230212\JJH_230212\virtualEx\bin\Debug\virtualEx.exe.config
+C:\Users\admin\Desktop\JJH_230219\JJH_Project\JJH_230212\JJH_230212\virtualEx\bin\Debug\virtualEx.exe
+C:\Users\admin\Desktop\JJH_230219\JJH_Project\JJH_230212\JJH_230212\virtualEx\bin\Debug\virtualEx.pdb
+C:\Users\admin\Desktop\JJH_230219\JJH_Project\JJH_230212\JJH_230212\virtualEx\obj\Debug\virtualEx.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\JJH_230219\JJH_Project\JJH_230212\JJH_230212\virtualEx\obj\Debug\virtualEx.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\JJH_230219\JJH_Project\JJH_230212\JJH_230212\virtualEx\obj\Debug\virtualEx.exe
+C:\Users\admin\Desktop\JJH_230219\JJH_Project\JJH_230212\JJH_230212\virtualEx\obj\Debug\virtualEx.pdb
