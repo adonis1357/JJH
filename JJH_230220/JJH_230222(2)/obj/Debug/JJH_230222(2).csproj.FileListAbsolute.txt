@@ -1,0 +1,7 @@
+C:\Users\adoni\OneDrive\바탕 화면\JJH2\JJH_230220\JJH_230222(2)\bin\Debug\JJH_230222(2).exe.config
+C:\Users\adoni\OneDrive\바탕 화면\JJH2\JJH_230220\JJH_230222(2)\bin\Debug\JJH_230222(2).exe
+C:\Users\adoni\OneDrive\바탕 화면\JJH2\JJH_230220\JJH_230222(2)\bin\Debug\JJH_230222(2).pdb
+C:\Users\adoni\OneDrive\바탕 화면\JJH2\JJH_230220\JJH_230222(2)\obj\Debug\JJH_230222(2).csproj.CoreCompileInputs.cache
+C:\Users\adoni\OneDrive\바탕 화면\JJH2\JJH_230220\JJH_230222(2)\obj\Debug\JJH_230222(2).exe
+C:\Users\adoni\OneDrive\바탕 화면\JJH2\JJH_230220\JJH_230222(2)\obj\Debug\JJH_230222(2).pdb
+C:\Users\adoni\OneDrive\바탕 화면\JJH2\JJH_230220\JJH_230222(2)\obj\Debug\JJH_230222(2).csproj.AssemblyReference.cache
