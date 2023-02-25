@@ -23,7 +23,8 @@ class Program
         Console.WriteLine("                    (엔터치면 시작합니다.)");
         Console.ReadLine();
 
-    restart:        
+    restart:    // 게임 재시작
+        
         Console.TreatControlCAsInput = true;        // Ctrl+C를 일반 키 입력으로 처리
         int user = 0;                               // 유저
         int windowWidth = Console.WindowWidth;
@@ -68,13 +69,20 @@ class Program
         int WiningSleep = 500;
         int TieSleep = 300;
 
+        int LifeVelue = 10;
+
         while (true)
         {
+            //if(LifeVelue < 1) // 라이프 모드(구상중)
+            //{
+            //    break;
+            //}
+
             Console.Clear();
             if (user > 10)
             {
                 start = 50;
-                if(user > 20)
+                if (user > 20)
                 {
                     start = 55;
                     if (user > 30)
@@ -103,8 +111,10 @@ class Program
 
 
 
-                           
 
+");
+            //Console.WriteLine($"                            생명력: {LifeVelue}"); // 라이프 모드(구상중)
+            Console.Write(@"
 
                             =======================================================================
                             |                                                                     |
@@ -131,6 +141,8 @@ class Program
                 Y_01 = random.Next(12, windowHeight - GSy);
                 X_01 = windowWidth - start;
                 monster_01 = user + random.Next(-3, 7);
+                Out++;
+                LifeVelue--;
             }
 
             if (x == X_01 && y == Y_01)
@@ -181,6 +193,7 @@ class Program
                 X_02 = windowWidth - start;
                 monster_02 = user + random.Next(-3, 7);
                 Out++;
+                LifeVelue--;
             }
 
             if (x == X_02 && y == Y_02)
@@ -231,6 +244,7 @@ class Program
                 X_03 = windowWidth - start;
                 monster_03 = user + random.Next(-3, 7);
                 Out++;
+                LifeVelue--;
             }
 
             if (x == X_03 && y == Y_03)
@@ -280,6 +294,8 @@ class Program
                 Y_04 = random.Next(12, windowHeight - GSy);
                 X_04 = windowWidth - start;
                 monster_04 = user + random.Next(-3, 7);
+                Out++;
+                LifeVelue--;
             }
 
             if (x == X_04 && y == Y_04)
@@ -330,6 +346,7 @@ class Program
                 X_05 = windowWidth - start;
                 monster_05 = user + random.Next(-3, 7);
                 Out++;
+                LifeVelue--;
             }
 
             if (x == X_05 && y == Y_05)
@@ -415,21 +432,21 @@ class Program
 
         Console.Clear();
         string yn = "";
-        int gameoverY = (windowHeight - 10) / 2;
+        int gameoverY = (windowHeight - 17) / 2;
         int gameoverX = (windowWidth - 45) / 2;
         Console.SetCursorPosition(gameoverX, gameoverY);
-        Console.WriteLine("           <게임오버>");
-        Console.WriteLine("                                            ----------------------");
+        Console.WriteLine("            <게임오버>");
+        Console.WriteLine("                                            ---------------------");
         Console.WriteLine($"                                              유    저: {user} Level");
-        Console.WriteLine("                                            ----------------------");
+        Console.WriteLine("                                            ---------------------");
         Console.WriteLine($"                                              각    성: {perfect} 회");
         Console.WriteLine($"                                              승    리: {win} 승");
         Console.WriteLine($"                                              무 승 부: {tie} 무");
-        Console.WriteLine("                                            ----------------------");
+        Console.WriteLine("                                            ---------------------");
         Console.WriteLine($"                                              미 충 돌: {Out} 마리");
-        Console.WriteLine("                                            ----------------------");
+        Console.WriteLine("                                            ---------------------");
         Console.WriteLine($"                                              몬 스 터: {monsterX} Level");
-        Console.WriteLine("                                            ----------------------");
+        Console.WriteLine("                                            ---------------------");
         while (true)
         {
             Console.Write("                                     게임을 다시 하시겠습니까?(y / n): ");
