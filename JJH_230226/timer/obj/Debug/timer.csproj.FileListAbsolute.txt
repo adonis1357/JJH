@@ -1,0 +1,6 @@
+C:\Users\admin\Desktop\JJH_230219\JJH_230226\timer\obj\Debug\timer.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\JJH_230219\JJH_230226\timer\bin\Debug\timer.exe.config
+C:\Users\admin\Desktop\JJH_230219\JJH_230226\timer\bin\Debug\timer.exe
+C:\Users\admin\Desktop\JJH_230219\JJH_230226\timer\bin\Debug\timer.pdb
+C:\Users\admin\Desktop\JJH_230219\JJH_230226\timer\obj\Debug\timer.exe
+C:\Users\admin\Desktop\JJH_230219\JJH_230226\timer\obj\Debug\timer.pdb

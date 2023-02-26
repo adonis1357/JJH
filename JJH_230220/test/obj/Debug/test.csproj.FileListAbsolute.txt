@@ -5,3 +5,10 @@ C:\Users\adoni\OneDrive\바탕 화면\JJH2\JJH_230220\test\obj\Debug\test.csproj
 C:\Users\adoni\OneDrive\바탕 화면\JJH2\JJH_230220\test\obj\Debug\test.csproj.CoreCompileInputs.cache
 C:\Users\adoni\OneDrive\바탕 화면\JJH2\JJH_230220\test\obj\Debug\test.exe
 C:\Users\adoni\OneDrive\바탕 화면\JJH2\JJH_230220\test\obj\Debug\test.pdb
+C:\Users\admin\Desktop\JJH_230219\JJH_230220\test\bin\Debug\test.exe.config
+C:\Users\admin\Desktop\JJH_230219\JJH_230220\test\bin\Debug\test.exe
+C:\Users\admin\Desktop\JJH_230219\JJH_230220\test\bin\Debug\test.pdb
+C:\Users\admin\Desktop\JJH_230219\JJH_230220\test\obj\Debug\test.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\JJH_230219\JJH_230220\test\obj\Debug\test.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\JJH_230219\JJH_230220\test\obj\Debug\test.exe
+C:\Users\admin\Desktop\JJH_230219\JJH_230220\test\obj\Debug\test.pdb
