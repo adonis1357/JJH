@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 
 namespace test
 {
-    public class monster
+    class gameover
     {
-       
+        public gameover()
+        {
+
+        }
     }
 }
