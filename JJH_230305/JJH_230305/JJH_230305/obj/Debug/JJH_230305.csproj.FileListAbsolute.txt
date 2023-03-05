@@ -5,3 +5,10 @@ C:\Users\adoni\OneDrive\바탕 화면\JJH2\JJH_230305\JJH_230305\JJH_230305\obj\
 C:\Users\adoni\OneDrive\바탕 화면\JJH2\JJH_230305\JJH_230305\JJH_230305\obj\Debug\JJH_230305.csproj.CoreCompileInputs.cache
 C:\Users\adoni\OneDrive\바탕 화면\JJH2\JJH_230305\JJH_230305\JJH_230305\obj\Debug\JJH_230305.exe
 C:\Users\adoni\OneDrive\바탕 화면\JJH2\JJH_230305\JJH_230305\JJH_230305\obj\Debug\JJH_230305.pdb
+C:\Users\admin\Desktop\JJH_230219\JJH_230305\JJH_230305\JJH_230305\bin\Debug\JJH_230305.exe.config
+C:\Users\admin\Desktop\JJH_230219\JJH_230305\JJH_230305\JJH_230305\bin\Debug\JJH_230305.exe
+C:\Users\admin\Desktop\JJH_230219\JJH_230305\JJH_230305\JJH_230305\bin\Debug\JJH_230305.pdb
+C:\Users\admin\Desktop\JJH_230219\JJH_230305\JJH_230305\JJH_230305\obj\Debug\JJH_230305.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\JJH_230219\JJH_230305\JJH_230305\JJH_230305\obj\Debug\JJH_230305.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\JJH_230219\JJH_230305\JJH_230305\JJH_230305\obj\Debug\JJH_230305.exe
+C:\Users\admin\Desktop\JJH_230219\JJH_230305\JJH_230305\JJH_230305\obj\Debug\JJH_230305.pdb

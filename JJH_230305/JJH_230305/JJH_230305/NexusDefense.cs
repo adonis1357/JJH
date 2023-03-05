@@ -32,30 +32,28 @@ namespace JJH_230305
                 int Out = 0;
                 int start = 40;
                 int NexusHP = 10;
-                string NexusHPchange = "";
+
                 string GameOverVelue = "";
 
                 int monsterLastVelue = 0;
-                //bool keyDown = false;
-                //ConsoleKeyInfo keyInfo;
 
                 int Y_Info = 10;
                 int X_Info = 30;
+                string combo = "";
+                int comboVelue = 0;
 
                 monsterRegen[] monsters = monsterRegen.monsterRegenVelue(Character, random, windowWidth, windowHeight);
 
                 Console.Clear();
                 while (true)
                 {
-                    NexusUI nexusUI = new NexusUI(NexusHP, NexusHPchange);
-                    nexusUI.Draw();
-
                     if (Character >= 10)
                     {
                         start = monsterRegen.GetStartValue(Character, start);
                     }
 
-                    gameGroundUI gameGround = new gameGroundUI();
+                    gameGroundUI gameGroundUI = new gameGroundUI(NexusHP);
+                    gameGroundUI.DrawgameGroundUI();
 
                     Console.SetCursorPosition(x, y);
                     Console.Write(Character);
@@ -63,7 +61,15 @@ namespace JJH_230305
                     bool CharacterDead = false;
                     for (int i = 0; i < 5; i++)
                     {
-                        if (monsters[i].MonsterRegenX < 30)
+                        if (monsters[i].MonsterRegenX < 24)
+                        {
+                            string monsterattack = Convert.ToString(monsters[i].MonsterPower);
+                            Console.SetCursorPosition(monsters[i].MonsterRegenX, monsters[i].MonsterRegenY);
+                            Console.Write(monsterattack = "☆");
+                            Thread.Sleep(50);
+                            gameGroundUI.DrawgameGroundUI2();
+                        }
+                        if (monsters[i].MonsterRegenX < 24)
                         {
                             monsters[i] = new monsterRegen();
                             monsters[i].MonsterPower = Character + random.Next(-3, 7);
@@ -101,7 +107,6 @@ namespace JJH_230305
                                     }
                                 }
                             }
-
                         }
                         if (x == monsters[i].MonsterRegenX && y == monsters[i].MonsterRegenY)
                         {
@@ -111,7 +116,7 @@ namespace JJH_230305
                                 {
                                     int RandomVelue = random.Next(3, 9);
                                     Character = Character + RandomVelue;
-                                    Console.SetCursorPosition(X_Info, Y_Info - 2);
+                                    Console.SetCursorPosition(X_Info, Y_Info);
                                     Console.Write($"각성하여 캐릭터 {RandomVelue} Level 증가               ");
                                     Thread.Sleep(10);
                                     perfect++;
@@ -121,25 +126,21 @@ namespace JJH_230305
                                         if (NexusHP > 50)
                                         {
                                             NexusHP = 50;
-                                            NexusHPchange = "최대치";
                                         }
                                     }
                                 }
                                 int RandomVelue2 = random.Next(1, 3);
                                 Character = Character + RandomVelue2;
-                                Console.SetCursorPosition(X_Info, Y_Info - 1);
+                                Console.SetCursorPosition(X_Info, Y_Info);
                                 Console.Write($"승리하여 캐릭터 {RandomVelue2} Level 증가               ");
                                 Thread.Sleep(10);
                                 win++;
                                 if (NexusHP <= 50)
                                 {
-                                    NexusHP = NexusHP + 2;
-                                    NexusHPchange = "수리";
+                                    NexusHP = NexusHP + 1;
                                     if (NexusHP > 50)
                                     {
                                         NexusHP = 50;
-                                        NexusHP = 0;
-                                        NexusHPchange = "최대치";
                                     }
                                 }
                             }
@@ -151,19 +152,32 @@ namespace JJH_230305
                                 Console.Write($"무승부로 캐릭터 -1 Level 감소               ");
                                 Thread.Sleep(10);
                                 tie++;
-                                if (NexusHP <= 50)
-                                {
-                                    NexusHP = NexusHP + 1;
-                                    if (NexusHP > 50)
-                                    {
-                                        NexusHP = 50;
-                                    }
-                                }
                             }
                             else
                             {
-                                Console.Clear();
+                                Console.SetCursorPosition(x - 2, y);
+                                Console.Write($"{Character}~~                 ");
+                                Thread.Sleep(50);
+                                Console.SetCursorPosition(x - 4, y);
+                                Console.Write($"{Character}~~~                   ");
+                                Thread.Sleep(40);
+                                Console.SetCursorPosition(x - 6, y);
+                                Console.Write($"{Character}~~~~                    ");
+                                Thread.Sleep(30);
+                                Console.SetCursorPosition(x - 9, y);
+                                Console.Write($"{Character}~~~~~                       ");
+                                Thread.Sleep(100);
+                                Console.SetCursorPosition(x - 10, y);
+                                Console.Write($"☆~                       ");
+                                Thread.Sleep(100);
+                                gameGroundUI gameGroundUI2 = new gameGroundUI(NexusHP);
+                                gameGroundUI2.DrawgameGroundUI3();
+                                Thread.Sleep(250);
+                                gameGroundUI2.DrawgameGroundUI4();
+                                Thread.Sleep(250);
+                                gameGroundUI2.DrawgameGroundUI5();
                                 Thread.Sleep(500);
+                                Console.Clear();
                                 Console.SetCursorPosition(x, y);
                                 Console.WriteLine($"캐릭터가 사망하였습니다 캐릭터[{Character} Level] 몬스터[{monsters[i].MonsterPower} Level]");
                                 Thread.Sleep(1000);
@@ -172,6 +186,10 @@ namespace JJH_230305
                                 GameOverVelue = "캐릭터가 사망하였습니다.";
                                 break;
                             }
+                            monsters[i] = new monsterRegen();
+                            monsters[i].MonsterPower = Character + random.Next(-3, 7);
+                            monsters[i].MonsterRegenX = windowWidth - start;
+                            monsters[i].MonsterRegenY = random.Next(12, windowHeight - 13);
                         }
                         monsters[i].MonsterRegenX--;
                         Console.SetCursorPosition(monsters[i].MonsterRegenX, monsters[i].MonsterRegenY);
@@ -191,7 +209,7 @@ namespace JJH_230305
                         //{
                         //    monsters[i].MonsterRegenX--;
                         //}
-                        //else if(i == 4)
+                        //else if (i == 4)
                         //{
                         //    monsters[i].MonsterRegenX -= 2;
                         //}
@@ -204,18 +222,27 @@ namespace JJH_230305
 
                     if (NexusHP <= 0)
                     {
-                        Console.SetCursorPosition(X_Info, Y_Info + 9);
-                        Console.WriteLine($"넥서스 내구도: {NexusHP}                   ");
-                        GameOverVelue = "넥서스가 파괴 되었습니다.";
-                        Thread.Sleep(500);
-                        Console.WriteLine($"넥서스가 파괴 되었습니다 캐릭터[{Character} Level");
+                        Console.SetCursorPosition(X_Info, Y_Info);
+                        Console.Write($"넥서스가 파괴 되었습니다.               ");
+                        gameGroundUI gameGroundUI2 = new gameGroundUI(NexusHP);
+                        gameGroundUI2.DrawgameGroundUI();
+                        Thread.Sleep(100);
+                        gameGroundUI2.DrawgameGroundUI3();
+                        Thread.Sleep(250);
+                        gameGroundUI2.DrawgameGroundUI4();
+                        Thread.Sleep(250);
+                        gameGroundUI2.DrawgameGroundUI5();
+                        Thread.Sleep(300);
+                        Console.Clear();
+                        Console.SetCursorPosition(X_Info+10, Y_Info+5);
+                        Console.WriteLine($"넥서스가 파괴 되었습니다 캐릭터[{Character} Level]");
                         Thread.Sleep(1000);
+                        GameOverVelue = "넥서스가 파괴 되었습니다.";
                         break;
                     }
 
                     Movement.MoveCharacter(ref x, ref y);
                     Thread.Sleep(50);
-
                 }
 
 
@@ -227,24 +254,20 @@ namespace JJH_230305
                 bool play2 = true;
                 while (play2)
                 {
-                    string yn = "";
                     Console.Write("                                       게임을 다시 하시겠습니까?(y / n): ");
-                    yn = Console.ReadLine();
-                    if (yn == "y" || yn == "Y")
+                    
+                    switch (Console.ReadLine().Trim().ToLower())
                     {
-                        play2 = false;
-                    }
-
-                    else if (yn == "n" || yn == "N")
-                    {
-                        play = false;
-                        break;
-                    }
-
-                    else
-                    {
-                        Console.WriteLine("");
-                        Console.WriteLine("                                          잘못입력 하셨습니다.");
+                        case "y":
+                            play2 = false;
+                            break;
+                        case "n":
+                            play = false;
+                            break;
+                        default:
+                            Console.WriteLine("");
+                            Console.WriteLine("                                        ㄴ잘못 입력 하셨습니다.");
+                            break;
                     }
                 }
             }

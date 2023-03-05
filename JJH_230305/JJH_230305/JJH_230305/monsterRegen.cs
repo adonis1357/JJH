@@ -11,12 +11,6 @@ namespace JJH_230305
         public int MonsterPower;
         public int MonsterRegenX;
         public int MonsterRegenY;
-        public monsterRegen()
-        {
-            MonsterPower = 0;
-            MonsterRegenX = 0;
-            MonsterRegenY = 0;
-        }
         public static monsterRegen[] monsterRegenVelue(int Character, Random random, int windowWidth, int windowHeight)
         {
             int RegenStar = -70;
@@ -60,7 +54,5 @@ namespace JJH_230305
             }
             return start;
         }
-
-
     }
 }
