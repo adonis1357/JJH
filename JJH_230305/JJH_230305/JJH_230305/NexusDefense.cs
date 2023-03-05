@@ -39,7 +39,6 @@ namespace JJH_230305
 
                 int Y_Info = 10;
                 int X_Info = 30;
-                string combo = "";
                 int comboVelue = 0;
 
                 monsterRegen[] monsters = monsterRegen.monsterRegenVelue(Character, random, windowWidth, windowHeight);
@@ -68,6 +67,9 @@ namespace JJH_230305
                             Console.Write(monsterattack = "☆");
                             Thread.Sleep(50);
                             gameGroundUI.DrawgameGroundUI2();
+                            comboVelue = 0;
+                            Console.SetCursorPosition(X_Info, Y_Info - 1);
+                            Console.Write("                                    ");
                         }
                         if (monsters[i].MonsterRegenX < 24)
                         {
@@ -128,7 +130,14 @@ namespace JJH_230305
                                             NexusHP = 50;
                                         }
                                     }
+                                }                               
+                                ++comboVelue;
+                               if(comboVelue > 1)
+                                {
+                                    Console.SetCursorPosition(X_Info, Y_Info - 1);
+                                    Console.Write($"COMBO {comboVelue}                  ");
                                 }
+                                
                                 int RandomVelue2 = random.Next(1, 3);
                                 Character = Character + RandomVelue2;
                                 Console.SetCursorPosition(X_Info, Y_Info);
@@ -146,6 +155,12 @@ namespace JJH_230305
                             }
                             else if (Character == monsters[i].MonsterPower)
                             {
+                                ++comboVelue;
+                                if (comboVelue > 1)
+                                {
+                                    Console.SetCursorPosition(X_Info, Y_Info - 1);
+                                    Console.Write($"COMBO {comboVelue}                  ");
+                                }
                                 int RandomVelue3 = random.Next(1, 3);
                                 Character--;
                                 Console.SetCursorPosition(X_Info, Y_Info);
