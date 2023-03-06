@@ -11,6 +11,7 @@ namespace JJH_230305
         public int MonsterPower;
         public int MonsterRegenX;
         public int MonsterRegenY;
+
         public static monsterRegen[] monsterRegenVelue(int Character, Random random, int windowWidth, int windowHeight)
         {
             int RegenStar = -70;
@@ -26,6 +27,7 @@ namespace JJH_230305
             }
             return monsterRegen;
         }
+
         public static int GetStartValue(int Character, int start) // 캐릭터 성장에 따라 몬스터가 가까운 곳에서 리젠
         {
             if (Character >= 10)

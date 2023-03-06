@@ -43,11 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CharacterDeadMotion.cs" />
     <Compile Include="gameGroundUI.cs" />
     <Compile Include="gameinfo.cs" />
     <Compile Include="GameOverUI.cs" />
     <Compile Include="monsterRegen.cs" />
     <Compile Include="Movement.cs" />
+    <Compile Include="NexusCollapsingMotion.cs" />
     <Compile Include="NexusDefense.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

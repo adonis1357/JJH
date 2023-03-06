@@ -17,33 +17,36 @@ namespace JJH_230305
                 gameinfo gameInfo = new gameinfo();
 
                 Console.TreatControlCAsInput = true;        // Ctrl+C를 일반 키 입력으로 처리
-                int Character = 0;
+
                 Random random = new Random();
+
+                int Character = 0;
+                int NexusHP = 10;
+                int monsterLastVelue = 0;
+
                 int windowWidth = Console.WindowWidth;
                 int windowHeight = Console.WindowHeight;
-
                 int x = 30;
                 int y = (windowHeight - 1) / 2;
                 int dieX = (windowWidth - 20) / 2;
                 int dieY = (windowHeight - 1) / 2;
+                int Y_Info = 10;
+                int X_Info = 30;
+                int start = 40;
+
                 int perfect = 0;
                 int win = 0;
                 int tie = 0;
                 int Out = 0;
-                int start = 40;
-                int NexusHP = 10;
+                int comboVelue = 0;
+                int MaxCombo = 0;
 
                 string GameOverVelue = "";
-
-                int monsterLastVelue = 0;
-
-                int Y_Info = 10;
-                int X_Info = 30;
-                int comboVelue = 0;
 
                 monsterRegen[] monsters = monsterRegen.monsterRegenVelue(Character, random, windowWidth, windowHeight);
 
                 Console.Clear();
+
                 while (true)
                 {
                     if (Character >= 10)
@@ -58,6 +61,7 @@ namespace JJH_230305
                     Console.Write(Character);
 
                     bool CharacterDead = false;
+
                     for (int i = 0; i < 5; i++)
                     {
                         if (monsters[i].MonsterRegenX < 24)
@@ -110,6 +114,7 @@ namespace JJH_230305
                                 }
                             }
                         }
+
                         if (x == monsters[i].MonsterRegenX && y == monsters[i].MonsterRegenY)
                         {
                             if (Character > monsters[i].MonsterPower)
@@ -130,14 +135,14 @@ namespace JJH_230305
                                             NexusHP = 50;
                                         }
                                     }
-                                }                               
+                                }
                                 ++comboVelue;
-                               if(comboVelue > 1)
+                                if (comboVelue > 1)
                                 {
                                     Console.SetCursorPosition(X_Info, Y_Info - 1);
                                     Console.Write($"COMBO {comboVelue}                  ");
                                 }
-                                
+
                                 int RandomVelue2 = random.Next(1, 3);
                                 Character = Character + RandomVelue2;
                                 Console.SetCursorPosition(X_Info, Y_Info);
@@ -170,28 +175,11 @@ namespace JJH_230305
                             }
                             else
                             {
-                                Console.SetCursorPosition(x - 2, y);
-                                Console.Write($"{Character}~~                 ");
-                                Thread.Sleep(50);
-                                Console.SetCursorPosition(x - 4, y);
-                                Console.Write($"{Character}~~~                   ");
-                                Thread.Sleep(40);
-                                Console.SetCursorPosition(x - 6, y);
-                                Console.Write($"{Character}~~~~                    ");
-                                Thread.Sleep(30);
-                                Console.SetCursorPosition(x - 9, y);
-                                Console.Write($"{Character}~~~~~                       ");
-                                Thread.Sleep(100);
-                                Console.SetCursorPosition(x - 10, y);
-                                Console.Write($"☆~                       ");
-                                Thread.Sleep(100);
-                                gameGroundUI gameGroundUI2 = new gameGroundUI(NexusHP);
-                                gameGroundUI2.DrawgameGroundUI3();
-                                Thread.Sleep(250);
-                                gameGroundUI2.DrawgameGroundUI4();
-                                Thread.Sleep(250);
-                                gameGroundUI2.DrawgameGroundUI5();
-                                Thread.Sleep(500);
+                                CharacterDeadMotion CharacterDeadMotion = new CharacterDeadMotion(Character, x, y); // 캐릭터 사망후 날아가는 연출
+                                NexusCollapsingMotion NexusCollapsingMotion = new NexusCollapsingMotion(NexusHP); // 넥서스 붕괴되는 연출
+                                
+
+
                                 Console.Clear();
                                 Console.SetCursorPosition(x, y);
                                 Console.WriteLine($"캐릭터가 사망하였습니다 캐릭터[{Character} Level] 몬스터[{monsters[i].MonsterPower} Level]");
@@ -228,8 +216,12 @@ namespace JJH_230305
                         //{
                         //    monsters[i].MonsterRegenX -= 2;
                         //}
-
                     }
+                    if (MaxCombo < comboVelue && comboVelue > 1)
+                    {
+                        MaxCombo = comboVelue;
+                    }
+
                     if (CharacterDead)
                     {
                         break;
@@ -239,17 +231,9 @@ namespace JJH_230305
                     {
                         Console.SetCursorPosition(X_Info, Y_Info);
                         Console.Write($"넥서스가 파괴 되었습니다.               ");
-                        gameGroundUI gameGroundUI2 = new gameGroundUI(NexusHP);
-                        gameGroundUI2.DrawgameGroundUI();
-                        Thread.Sleep(100);
-                        gameGroundUI2.DrawgameGroundUI3();
-                        Thread.Sleep(250);
-                        gameGroundUI2.DrawgameGroundUI4();
-                        Thread.Sleep(250);
-                        gameGroundUI2.DrawgameGroundUI5();
-                        Thread.Sleep(300);
+                        NexusCollapsingMotion NexusCollapsingMotion = new NexusCollapsingMotion(NexusHP); // 넥서스 붕괴되는 연출
                         Console.Clear();
-                        Console.SetCursorPosition(X_Info+10, Y_Info+5);
+                        Console.SetCursorPosition(X_Info + 10, Y_Info + 5);
                         Console.WriteLine($"넥서스가 파괴 되었습니다 캐릭터[{Character} Level]");
                         Thread.Sleep(1000);
                         GameOverVelue = "넥서스가 파괴 되었습니다.";
@@ -260,17 +244,14 @@ namespace JJH_230305
                     Thread.Sleep(50);
                 }
 
-
                 Console.Clear();
 
-                var gameOverUI = new GameOverUI(GameOverVelue, Character, perfect, win, tie, Out, monsterLastVelue); // 게임오버UI
-                gameOverUI.Print();
+                GameOverUI GameOverUI = new GameOverUI(GameOverVelue, Character, perfect, win, tie, Out, monsterLastVelue, MaxCombo); // 게임오버UI                
 
                 bool play2 = true;
                 while (play2)
                 {
                     Console.Write("                                       게임을 다시 하시겠습니까?(y / n): ");
-                    
                     switch (Console.ReadLine().Trim().ToLower())
                     {
                         case "y":
